@@ -11,7 +11,7 @@ class client(object):
     def client_socket(self,z):
         s = socket.socket()
         port = 3125  #insert Port that you want to use, need to be >1024
-        ip = '192.168.0.104' #insert server ip
+        ip = '' #insert server ip
         s.connect((ip, port))
         s.sendall(pickle.dumps(z))
         s.close()
