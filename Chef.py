@@ -31,7 +31,7 @@ class server(object):
     def server_socket(self):
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         port = 3125 
-        ip = '192.168.0.104' #insert server ip
+        ip = '' #insert server ip
 
         s.bind((ip, port))
         s.listen(3)
